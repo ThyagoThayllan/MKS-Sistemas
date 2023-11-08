@@ -37,9 +37,9 @@ export const App = () => {
     return useQuery<ProductsResponse, Error>(["products", params], () => {
       return new Promise((resolve) => {
         setTimeout(() => {
-          resolve(fetchProducts(params))
-        }, 2000)
-      })
+          resolve(fetchProducts(params));
+        }, 2000);
+      });
     });
   };
 
