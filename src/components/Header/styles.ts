@@ -11,8 +11,10 @@ export const Head = styled.header`
   position: relative;
   color: ${(props) => props.theme.color.white};
 
-  ${props => css`
-    padding: 1rem 2rem;
+  ${(props) => css`
+    @media (max-width: 1024px) {
+      padding: 1rem 2rem;
+    }
   `}
 `;
 
@@ -62,7 +64,7 @@ export const Carrinho = styled.button`
   p {
     color: ${(props) => props.theme.color.black};
     font-weight: bold;
-    font-size: ${(props) => props.theme.font_size.lg};
+    font-size: 15px;
   }
 
   &:hover {
