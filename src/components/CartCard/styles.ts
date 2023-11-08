@@ -12,7 +12,7 @@ export const Container = styled.div`
   border-radius: 8px;
   font-size: 0.75rem;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       flex-flow: column;
       padding-bottom: 2.5rem;
@@ -24,7 +24,7 @@ export const Image = styled.img`
   width: 50px;
   height: 50px;
 
-  ${(props) => css`
+  ${css`
     width: 75px;
     height: 75px;
   `}
@@ -37,7 +37,7 @@ export const Title = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       font-size: 16px;
       width: 100%;
@@ -50,7 +50,7 @@ export const Quantidade = styled.div`
   flex: 1;
   text-align: center;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
     }
   `}
@@ -58,7 +58,7 @@ export const Quantidade = styled.div`
   p {
     font-size: 10px;
 
-    ${(props) => css`
+    ${css`
       @media (max-width: 1024px) {
         display: none;
       }
@@ -70,7 +70,7 @@ export const Quantidade = styled.div`
     display: flex;
     gap: 5px;
 
-    ${(props) => css`
+    ${css`
       @media (max-width: 1024px) {
         font-size: 16px;
         font-weight: bold;
@@ -90,14 +90,14 @@ export const Price = styled.div`
   flex: 1;
   text-align: center;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       line-height: 1;
       position: absolute;
       bottom: 15px;
       right: 30px;
-      background-color: ${props.theme.color.gray};
-      color: ${props.theme.color.white};
+      background-color: ${(props) => props.theme.color.gray};
+      color: ${(props) => props.theme.color.white};
       padding: 0.25rem 0.5rem;
       border-radius: 5px;
     }
@@ -137,14 +137,14 @@ export const X = styled.button`
   margin-top: -80px;
   border: 0;
 
-  ${(props) => css`
+  ${css`
     margin-right: 0;
     margin-top: 0;
     top: 0;
     right: 5px;
     font-size: 25px;
     text-transform: lowercase;
-    color: ${props.theme.color.black};
+    color: ${(props) => props.theme.color.black};
     background-color: transparent;
   `}
 

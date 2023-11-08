@@ -7,12 +7,12 @@ export const Container = styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  border: 2px solid ${props => props.theme.color.black};
+  border: 2px solid ${(props) => props.theme.color.black};
   margin-right: -6px;
   border-radius: 8px;
   overflow: hidden;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       width: 75%;
     }
@@ -35,7 +35,7 @@ export const Head = styled.header`
   h1 {
     font-size: 25px;
 
-    ${(props) => css`
+    ${css`
       @media (max-width: 1024px) {
         font-size: 20px;
       }
@@ -86,7 +86,7 @@ export const Total = styled.div`
   bottom: 0;
   padding-bottom: 105px;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       margin-bottom: -20px;
     }
@@ -95,7 +95,7 @@ export const Total = styled.div`
   h1 {
     font-size: 28px;
 
-    ${(props) => css`
+    ${css`
       @media (max-width: 1024px) {
         font-size: 20px;
       }
@@ -106,7 +106,7 @@ export const Total = styled.div`
     font-weight: 700;
     font-size: 28px;
 
-    ${(props) => css`
+    ${css`
       @media (max-width: 1024px) {
         font-size: 20px;
       }
@@ -127,7 +127,7 @@ export const Button = styled.button`
   bottom: 0;
   transition: all 0.2s;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       font-size: 20px;
     }

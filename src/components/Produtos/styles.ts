@@ -7,7 +7,7 @@ export const Container = styled.div`
   gap: 15px;
   flex-wrap: wrap;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       width: 100%;
     }

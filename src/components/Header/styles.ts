@@ -11,7 +11,7 @@ export const Head = styled.header`
   position: relative;
   color: ${(props) => props.theme.color.white};
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       padding: 1rem 2rem;
     }
@@ -23,7 +23,7 @@ export const Logo = styled.div`
   gap: 5px;
   cursor: default;
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       align-items: center;
     }
@@ -33,7 +33,7 @@ export const Logo = styled.div`
     font-weight: 600;
     font-size: 40px;
 
-    ${(props) => css`
+    ${css`
       @media (max-width: 1024px) {
         font-size: 32px;
       }
@@ -43,7 +43,7 @@ export const Logo = styled.div`
     margin-top: 17.5px;
     font-size: 20px;
 
-    ${(props) => css`
+    ${css`
       @media (max-width: 1024px) {
         font-size: 16px;
         margin-top: 0;

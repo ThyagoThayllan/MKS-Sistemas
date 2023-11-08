@@ -34,13 +34,15 @@ export const App = () => {
     sortBy: string;
     orderBy: string;
   }) => {
-    return useQuery<ProductsResponse, Error>(["products", params], () => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(fetchProducts(params));
-        }, 2000);
+    const delayedFetch = async () => {
+      await new Promise((resolve) => {
+        setTimeout(resolve, 2000);
       });
-    });
+
+      return fetchProducts(params)
+    };
+
+    return useQuery<ProductsResponse, Error>(["products", params], delayedFetch);
   };
 
   const { data, isLoading, isError } = useFetchProducts({

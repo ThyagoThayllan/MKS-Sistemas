@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
 
         
-        ${(props) => css`
+        ${css`
           @media (max-width: 1024px) {
             font-size: 0.875rem;
           }
@@ -31,7 +31,7 @@ export const Container = styled.section`
   height: 100vh;
   background-color: ${(props) => props.theme.color.white};
 
-  ${(props) => css`
+  ${css`
     @media (max-width: 1024px) {
       height: 100%;
     }

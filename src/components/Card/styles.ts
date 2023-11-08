@@ -11,7 +11,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  ${props => css`
+  ${css`
     @media (max-width: 768px) {
       width:  75%;
     }
