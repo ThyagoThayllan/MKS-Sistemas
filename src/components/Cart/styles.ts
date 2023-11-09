@@ -71,7 +71,11 @@ export const Selecionados = styled.div`
   padding-right: 5px;
 
   &::-webkit-scrollbar {
-    display: none;
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 10px;
   }
 `;
 
